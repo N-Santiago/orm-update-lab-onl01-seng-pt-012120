@@ -43,14 +43,16 @@ def self.create_table
   end
 end 
 
-def self.create(name, grade)
+  def self.create(name, grade)
     student = Student.new(name, grade)
     student.save
     student
   end
 
-def self.new_from_db(row)
+  def self.new_from_db(row)
     student = Student.new(row[0],row[1], row[2])
   end
+  
+  def self.new_from_db
 
 end
