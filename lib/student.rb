@@ -44,9 +44,9 @@ def self.create_table
 end 
 
 def self.create(name:, grade:)
-    song = Song.new(name, grade)
-    song.save
-    song
+    student = Student.new(name, grade)
+    student.save
+    student 
   end
 
 end
